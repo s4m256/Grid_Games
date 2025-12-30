@@ -1,0 +1,21 @@
+#board {
+    margin-top: 10px;
+    display: grid;
+    gap: 2px;
+    width: fit-content;
+    height: fit-content;
+    margin: 100px auto;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
