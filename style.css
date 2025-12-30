@@ -8,9 +8,13 @@
 }
 
 .cell {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: 2px solid black;
+}
+
+.cell.marked {
+
 }
 
 #controls {
@@ -18,4 +22,28 @@
     justify-content: center;
     gap: 8px;
     margin-top: 10px;
+}
+
+#palette {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.color {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #444;
+    cursor: pointer;
+}
+
+.color[data-color="red"] { background: red; }
+.color[data-color="blue"] { background: blue; }
+.color[data-color="green"] { background: green; }
+.color[data-color="black"] { background: black; }
+
+.color.selected {
+    outline: 3px solid gold;
 }
